@@ -1,9 +1,13 @@
 cd Desktop/files
-
 git init
 git branch -m main
-git add .
-git commit -m "inicjalizacja projektu"
-
+git add index.html
+git commit -m "dodanie index.html"
+git checkout -b feature/style
+git add style.css
+git commit -m "dodanie style.css"
+git commit --allow-empty -m "aktualizacja stylow"
+git checkout main
+git merge feature/style --no-ff -m "polaczenie feature/style z main"
 git remote add origin https://github.com/michalcii/strona-przykladowa
 git push -u origin main
