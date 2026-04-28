@@ -1,0 +1,9 @@
+cd Desktop/files
+
+git init
+git branch -m main
+git add .
+git commit -m "inicjalizacja projektu"
+
+git remote add origin https://github.com/michalcii/strona-przykladowa
+git push -u origin main
